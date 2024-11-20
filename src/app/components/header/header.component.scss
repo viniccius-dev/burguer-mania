@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-left: 1.5rem;
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--text-color, #333);
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--primary-color, #ff6f61);
+        }
+      }
+    }
+  }
+}
